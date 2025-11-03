@@ -1,275 +1,434 @@
 export default function Home() {
   return (
-    <div className="min-h-screen bg-slate-50 text-slate-900">
-      <div className="absolute inset-x-0 top-0 h-96 bg-gradient-to-b from-sky-100 via-slate-50 to-transparent" />
-
-      <header className="sticky top-0 z-50 bg-white/80 shadow-sm backdrop-blur">
+    <div className="min-h-screen bg-[#0b0d10] text-slate-100">
+      <header className="sticky top-0 z-50 border-b border-slate-800 bg-[#0f1115]/80 backdrop-blur">
         <nav className="mx-auto flex max-w-6xl items-center justify-between px-6 py-4">
-          <div className="text-lg font-semibold tracking-tight text-slate-900">
+          <a href="#inicio" className="text-base font-semibold tracking-tight text-slate-100">
             Grupo AAhumada
-          </div>
-          <div className="flex gap-6 text-sm font-medium text-slate-600">
-            <a className="hover:text-slate-900" href="#inicio">
+          </a>
+          <div className="flex gap-6 text-sm font-medium text-slate-400">
+            <a className="transition hover:text-[#c2a676]" href="#inicio">
               Inicio
             </a>
-            <a className="hover:text-slate-900" href="#nosotros">
+            <a className="transition hover:text-[#c2a676]" href="#nosotros">
               Nosotros
             </a>
-            <a className="hover:text-slate-900" href="#empresas">
+            <a className="transition hover:text-[#c2a676]" href="#empresas">
               Empresas
             </a>
-            <a className="hover:text-slate-900" href="#contacto">
+            <a className="transition hover:text-[#c2a676]" href="#contacto">
               Contacto
             </a>
           </div>
         </nav>
       </header>
 
-      <main className="relative mx-auto flex max-w-6xl flex-col gap-28 px-6 pb-24 pt-24" id="inicio">
-        <section className="grid gap-16 md:grid-cols-[1.1fr_0.9fr] md:items-center">
+      <main className="mx-auto flex max-w-6xl flex-col gap-24 px-6 py-24" id="inicio">
+        <section className="grid gap-12 rounded-4xl border border-slate-800 bg-[#13161d] p-10 shadow-[0_20px_60px_-40px_rgba(0,0,0,0.8)] md:grid-cols-[1.1fr_0.9fr] md:p-12">
           <div className="space-y-8">
-            <span className="inline-flex items-center rounded-full bg-sky-100 px-4 py-1 text-sm font-medium text-sky-700">
-              Innovacion con proposito
+            <span className="inline-flex items-center rounded-full border border-[#c2a676]/40 px-4 py-1 text-xs font-semibold uppercase tracking-[0.3em] text-[#c2a676]">
+              Grupo multidisciplinario
             </span>
-            <h1 className="text-4xl font-bold leading-tight tracking-tight text-slate-900 md:text-5xl">
-              Impulsamos soluciones que conectan personas, ideas y tecnologia.
-            </h1>
-            <p className="text-lg leading-relaxed text-slate-600">
-              En Grupo AAhumada unimos talento multidisciplinario para crear experiencias memorables.
-              Acompanamos a nuestros aliados desde la estrategia hasta la ejecucion, con un enfoque
-              humano y sostenible.
+            <div className="space-y-4">
+              <h1 className="font-playfair text-4xl font-semibold tracking-tight text-slate-50 md:text-5xl">
+                Grupo AAhumada
+              </h1>
+              <p className="text-xl text-slate-300">
+                Diseño, tecnología y manufactura con propósito.
+              </p>
+            </div>
+            <p className="max-w-xl text-base leading-relaxed text-slate-300">
+              Creamos y gestionamos proyectos que combinan artesanía, innovación y software. Desde
+              muebles tapizados a medida hasta alimentos gourmet y soluciones SaaS con IA.
             </p>
-            <div className="flex flex-wrap gap-4">
+            <div className="flex flex-wrap gap-3">
+              <a
+                href="#empresas"
+                className="inline-flex items-center justify-center rounded-full bg-[#c2a676] px-6 py-3 text-sm font-semibold text-[#14161d] transition hover:bg-[#b79960]"
+              >
+                Conocer nuestros proyectos
+              </a>
               <a
                 href="#contacto"
-                className="inline-flex items-center justify-center rounded-full bg-slate-900 px-6 py-3 text-sm font-semibold text-white shadow-sm transition hover:bg-slate-700"
+                className="inline-flex items-center justify-center rounded-full border border-slate-700 px-6 py-3 text-sm font-semibold text-slate-200 transition hover:border-[#c2a676] hover:text-[#c2a676]"
               >
-                Conversemos
-              </a>
-              <a
-                href="#nosotros"
-                className="inline-flex items-center justify-center rounded-full border border-slate-200 px-6 py-3 text-sm font-semibold text-slate-700 transition hover:border-slate-900 hover:text-slate-900"
-              >
-                Conoce nuestra historia
+                Contáctanos
               </a>
             </div>
+            <dl className="grid gap-3 text-sm text-slate-400 sm:grid-cols-3">
+              <div className="rounded-2xl border border-slate-700 bg-[#191d27] px-4 py-3">
+                <dt className="text-xs uppercase tracking-[0.25em] text-slate-500">Experiencia</dt>
+                <dd className="mt-2 font-playfair text-3xl font-semibold text-slate-100">1 año</dd>
+              </div>
+              <div className="rounded-2xl border border-slate-700 bg-[#191d27] px-4 py-3">
+                <dt className="text-xs uppercase tracking-[0.25em] text-slate-500">Proyectos</dt>
+                <dd className="mt-2 font-playfair text-3xl font-semibold text-slate-100">4</dd>
+              </div>
+              <div className="rounded-2xl border border-slate-700 bg-[#191d27] px-4 py-3">
+                <dt className="text-xs uppercase tracking-[0.25em] text-slate-500">Alianzas</dt>
+                <dd className="mt-2 font-playfair text-3xl font-semibold text-slate-100">2 sectores</dd>
+              </div>
+            </dl>
           </div>
-          <div className="relative overflow-hidden rounded-3xl border border-slate-100 bg-white p-10 shadow-xl">
-            <div className="pointer-events-none absolute -left-24 top-10 h-32 w-32 rounded-full bg-sky-200 blur-3xl" />
-            <div className="pointer-events-none absolute -right-6 bottom-6 h-32 w-32 rounded-full bg-indigo-200 blur-3xl" />
-            <div className="relative space-y-6">
-              <p className="text-sm font-semibold uppercase tracking-[0.2em] text-slate-500">
-                Nuestra esencia
+          <div className="flex flex-col gap-6 rounded-3xl border border-slate-700 bg-[#161922] p-8">
+            <p className="text-sm font-semibold uppercase tracking-[0.25em] text-[#c2a676]">
+              Nuestra esencia
+            </p>
+            <p className="text-base leading-relaxed text-slate-300">
+              Somos un equipo apasionado por transformar desafíos en oportunidades, integrando diseño,
+              tecnología y manufactura de forma ágil y humana.
+            </p>
+            <ul className="space-y-4 text-sm text-slate-300">
+              <li className="flex items-start gap-3">
+                <span className="mt-2 h-2 w-2 rounded-full bg-[#c2a676]" />
+                <span>Proyectos a medida, desde la estrategia hasta la ejecución.</span>
+              </li>
+              <li className="flex items-start gap-3">
+                <span className="mt-2 h-2 w-2 rounded-full bg-[#c2a676]" />
+                <span>Equipos interdisciplinarios y procesos colaborativos.</span>
+              </li>
+              <li className="flex items-start gap-3">
+                <span className="mt-2 h-2 w-2 rounded-full bg-[#c2a676]" />
+                <span>Experiencias con impacto real y enfoque sostenible.</span>
+              </li>
+            </ul>
+          </div>
+        </section>
+
+        <section
+          className="rounded-4xl border border-slate-800 bg-[#141821] p-10 shadow-[0_20px_60px_-40px_rgba(0,0,0,0.8)] md:p-12"
+          id="nosotros"
+        >
+          <div className="max-w-3xl space-y-6">
+            <h2 className="font-playfair text-3xl font-semibold text-slate-50">Quiénes somos</h2>
+            <p className="text-lg leading-relaxed text-slate-300">
+              Grupo AAhumada es un grupo empresarial chileno dedicado a crear, desarrollar y escalar
+              proyectos en diferentes industrias. Integramos diseño, manufactura y tecnología para
+              entregar productos y experiencias con alma.
+            </p>
+            <p className="text-lg leading-relaxed text-slate-300">
+              Trabajamos bajo demanda, con foco en calidad, materiales nobles y procesos eficientes.
+              Cada marca del grupo tiene identidad propia, pero comparte una misma filosofía: construir
+              valor real y relaciones de largo plazo.
+            </p>
+          </div>
+          <div className="mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+            <div className="rounded-3xl border border-slate-700 bg-[#181c26] p-6">
+              <h3 className="font-playfair mb-2 text-lg font-semibold text-[#c2a676]">Misión</h3>
+              <p className="text-sm leading-relaxed text-slate-300">
+                Conectar diseño, tecnología y artesanía para crear marcas que mejoren la vida de las
+                personas y los negocios.
               </p>
-              <p className="text-xl font-medium leading-relaxed text-slate-700">
-                Somos un equipo apasionado por transformar desafios en oportunidades. Creemos en la
-                colaboracion, la curiosidad permanente y la excelencia como motor de cada proyecto.
+            </div>
+            <div className="rounded-3xl border border-slate-700 bg-[#181c26] p-6">
+              <h3 className="font-playfair mb-2 text-lg font-semibold text-[#c2a676]">Visión</h3>
+              <p className="text-sm leading-relaxed text-slate-300">
+                Ser un referente en Chile por la calidad de nuestros productos y la innovación aplicada,
+                expandiendo nuestras marcas a mercados internacionales.
               </p>
-              <div className="grid grid-cols-2 gap-6 text-center text-sm">
-                <div className="rounded-2xl bg-slate-50 p-4">
-                  <p className="text-3xl font-semibold text-slate-900">15+</p>
-                  <p className="text-slate-500">Anos de experiencia</p>
+            </div>
+            <div className="rounded-3xl border border-slate-700 bg-[#181c26] p-6 sm:col-span-2 lg:col-span-1">
+              <h3 className="font-playfair mb-3 text-lg font-semibold text-[#c2a676]">Valores</h3>
+              <ul className="space-y-2 text-sm text-slate-300">
+                <li>Calidad sin atajos: materiales y procesos seleccionados.</li>
+                <li>Innovación útil: tecnología al servicio de personas y resultados.</li>
+                <li>Artesanía con respeto: cuidado por los oficios y sus técnicas.</li>
+                <li>Transparencia: comunicación clara y compromisos cumplidos.</li>
+                <li>Sustentabilidad responsable: decisiones de largo plazo.</li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+        <section
+          className="space-y-8 rounded-4xl border border-slate-800 bg-[#13161d] p-10 shadow-[0_20px_60px_-40px_rgba(0,0,0,0.8)] md:p-12"
+          id="empresas"
+        >
+          <div className="space-y-4">
+            <h2 className="font-playfair text-3xl font-semibold text-slate-50">
+              Líneas de Negocio — Grupo AAhumada
+            </h2>
+            <p className="max-w-3xl text-lg leading-relaxed text-slate-300">
+              En Grupo AAhumada impulsamos proyectos que combinan diseño, manufactura y tecnología. Cada
+              línea nace desde una idea con propósito y evoluciona hasta convertirse en una marca
+              independiente, manteniendo siempre nuestra esencia: crear con alma.
+            </p>
+          </div>
+
+          <div className="grid gap-6 md:grid-cols-2">
+            <article className="flex h-full flex-col gap-6 rounded-3xl border border-slate-700 bg-[#191d27] p-8">
+              <div className="space-y-2">
+                <p className="text-xs font-semibold uppercase tracking-[0.3em] text-[#c2a676]">
+                  La Casa del Tapiz · En operación
+                </p>
+                <h3 className="font-playfair text-xl font-semibold text-slate-100">
+                  Diseño y fabricación de muebles
+                </h3>
+              </div>
+              <p className="text-sm leading-relaxed text-slate-300">
+                La Casa del Tapiz es nuestra marca principal, dedicada al diseño y producción artesanal de
+                sofás, sillones y piezas personalizadas. Fabricamos bajo demanda utilizando maderas nobles,
+                tapices seleccionados y un enfoque 100% a domicilio.
+              </p>
+              <p className="text-sm leading-relaxed text-slate-300">
+                Cada mueble es una colaboración entre el cliente y nuestro equipo, buscando lograr
+                funcionalidad, estética y durabilidad.
+              </p>
+              <dl className="mt-auto space-y-2 text-xs text-slate-400">
+                <div className="flex gap-2">
+                  <dt className="font-semibold text-slate-200">Estado:</dt>
+                  <dd>Activa</dd>
                 </div>
-                <div className="rounded-2xl bg-slate-50 p-4">
-                  <p className="text-3xl font-semibold text-slate-900">120+</p>
-                  <p className="text-slate-500">Proyectos entregados</p>
+                <div className="flex gap-2">
+                  <dt className="font-semibold text-slate-200">Sitio web:</dt>
+                  <dd>
+                    <a
+                      href="https://lacasadeltapiz.com"
+                      target="_blank"
+                      rel="noreferrer"
+                      className="text-[#c2a676] transition hover:text-[#b79960]"
+                    >
+                      lacasadeltapiz.com
+                    </a>
+                  </dd>
                 </div>
+                <div className="flex gap-2">
+                  <dt className="font-semibold text-slate-200">Sector:</dt>
+                  <dd>Mobiliario y decoración</dd>
+                </div>
+                <div className="flex gap-2">
+                  <dt className="font-semibold text-slate-200">Redes:</dt>
+                  <dd>
+                    <a
+                      href="https://www.instagram.com/lacasadeltapiz_"
+                      target="_blank"
+                      rel="noreferrer"
+                      className="text-[#c2a676] transition hover:text-[#b79960]"
+                    >
+                      Instagram · @lacasadeltapiz_
+                    </a>
+                  </dd>
+                </div>
+              </dl>
+            </article>
+
+            <article className="flex h-full flex-col gap-6 rounded-3xl border border-slate-700 bg-[#191d27] p-8">
+              <div className="space-y-2">
+                <p className="text-xs font-semibold uppercase tracking-[0.3em] text-[#c2a676]">
+                   IA-Marketing · En desarrollo
+                </p>
+                <h3 className="font-playfair text-xl font-semibold text-slate-100">
+                  Automatización inteligente para marcas
+                </h3>
               </div>
+              <p className="text-sm leading-relaxed text-slate-300">
+                IA-Marketing es un servicio para que las empresas puedan crear publicidad con inteligencia
+                artificial, incorporando una tecnología de múltiples prompts que personaliza mensajes y
+                piezas según cada audiencia.
+              </p>
+              <p className="text-sm leading-relaxed text-slate-300">
+                La plataforma automatiza la generación de campañas y contenidos, facilitando la iteración
+                creativa sin depender de equipos técnicos complejos. Actualmente en etapa de desarrollo
+                interno y validación de modelo.
+              </p>
+              <dl className="mt-auto space-y-2 text-xs text-slate-400">
+                <div className="flex gap-2">
+                  <dt className="font-semibold text-slate-200">Estado:</dt>
+                  <dd>En desarrollo (lanzamiento 2025)</dd>
+                </div>
+                <div className="flex gap-2">
+                  <dt className="font-semibold text-slate-200">Sector:</dt>
+                  <dd>Software · Inteligencia Artificial</dd>
+                </div>
+                <div className="flex gap-2">
+                  <dt className="font-semibold text-slate-200">Redes:</dt>
+                  <dd className="text-slate-500">Próximamente</dd>
+                </div>
+              </dl>
+            </article>
+
+            <article className="flex h-full flex-col gap-6 rounded-3xl border border-slate-700 bg-[#191d27] p-8">
+              <div className="space-y-2">
+                <p className="text-xs font-semibold uppercase tracking-[0.3em] text-[#c2a676]">
+                  Salsa de Ajo · En proceso de creación
+                </p>
+                <h3 className="font-playfair text-xl font-semibold text-slate-100">
+                  Alimentos gourmet con identidad
+                </h3>
+              </div>
+              <p className="text-sm leading-relaxed text-slate-300">
+                Salsa de Ajo es una línea de Ahumada gourmet creada con el propósito de rescatar sabores
+                caseros y ofrecer productos honestos y saludables.
+              </p>
+              <p className="text-sm leading-relaxed text-slate-300">
+                Desarrollamos recetas equilibradas, con control total de ingredientes y procesos, buscando
+                posicionarla como una alternativa artesanal premium. Actualmente en fase de pruebas y
+                desarrollo de identidad visual.
+              </p>
+              <dl className="mt-auto space-y-2 text-xs text-slate-400">
+                <div className="flex gap-2">
+                  <dt className="font-semibold text-slate-200">Estado:</dt>
+                  <dd>En proceso de creación</dd>
+                </div>
+                <div className="flex gap-2">
+                  <dt className="font-semibold text-slate-200">Sector:</dt>
+                  <dd>Alimentos · Gastronomía artesanal</dd>
+                </div>
+                <div className="flex gap-2">
+                  <dt className="font-semibold text-slate-200">Redes:</dt>
+                  <dd>
+                    <a
+                      href="https://www.instagram.com/ahumada.gorumet"
+                      target="_blank"
+                      rel="noreferrer"
+                      className="text-[#c2a676] transition hover:text-[#b79960]"
+                    >
+                      Instagram · @ahumada.gorumet
+                    </a>
+                  </dd>
+                </div>
+              </dl>
+            </article>
+
+            <article className="flex h-full flex-col gap-6 rounded-3xl border border-slate-700 bg-[#191d27] p-8">
+              <div className="space-y-2">
+                <p className="text-xs font-semibold uppercase tracking-[0.3em] text-[#c2a676]">
+                  Ahumada Labs · Incubadora interna
+                </p>
+                <h3 className="font-playfair text-xl font-semibold text-slate-100">
+                  Innovación y prototipos con visión de futuro
+                </h3>
+              </div>
+              <p className="text-sm leading-relaxed text-slate-300">
+                Ahumada Labs es el espacio de experimentación del grupo, donde nacen y se validan nuevas
+                ideas que pueden transformarse en futuras marcas. Funciona como laboratorio de innovación,
+                prototipado y diseño interdisciplinario.
+              </p>
+              <dl className="mt-auto space-y-2 text-xs text-slate-400">
+                <div className="flex gap-2">
+                  <dt className="font-semibold text-slate-200">Estado:</dt>
+                  <dd>Conceptual · I+D</dd>
+                </div>
+                <div className="flex gap-2">
+                  <dt className="font-semibold text-slate-200">Sector:</dt>
+                  <dd>Innovación · Prototipado · Diseño</dd>
+                </div>
+                <div className="flex gap-2">
+                  <dt className="font-semibold text-slate-200">Redes:</dt>
+                  <dd className="text-slate-500">Próximamente</dd>
+                </div>
+              </dl>
+            </article>
+          </div>
+        </section>
+
+        <section className="rounded-4xl border border-slate-800 bg-[#13161d] p-10 shadow-[0_20px_60px_-40px_rgba(0,0,0,0.8)] md:p-12" id="fundador">
+          <div className="grid gap-10 md:grid-cols-[0.8fr_1.2fr] md:items-start">
+            <div className="space-y-3">
+              <h2 className="font-playfair text-3xl font-semibold text-slate-50">Agustín Ahumada</h2>
+              <p className="text-xs font-semibold uppercase tracking-[0.3em] text-[#c2a676]">
+                Fundador · Chile, 2002
+              </p>
+            </div>
+            <div className="space-y-6 text-lg leading-relaxed text-slate-300">
+              <p>
+                Agustín Ahumada es el fundador de Grupo AAhumada, empresa chilena dedicada al diseño,
+                manufactura y desarrollo tecnológico. Desde joven mostró interés por la creación y la
+                construcción, combinando el trabajo artesanal con la innovación digital.
+              </p>
+              <p>
+                Su visión ha sido integrar diferentes disciplinas —diseño, tecnología y gastronomía— bajo
+                una misma filosofía: crear con propósito y alma.
+              </p>
+              <p>
+                Actualmente lidera el desarrollo de La Casa del Tapiz, marca enfocada en muebles tapizados
+                a medida; e IA-Marketing, plataforma SaaS con inteligencia artificial.
+              </p>
             </div>
           </div>
         </section>
 
-        <section className="space-y-12" id="nosotros">
-          <div className="space-y-4">
-            <h2 className="text-3xl font-semibold text-slate-900">Quienes somos?</h2>
-            <p className="max-w-3xl text-lg leading-relaxed text-slate-600">
-              Grupo AAhumada nace de la vision de Alejandro Ahumada, emprendedor y estratega digital
-              que ha liderado iniciativas en distintos sectores productivos. Reunimos especialistas en
-              innovacion, marketing, tecnologia y diseno para acompanar a organizaciones que buscan un
-              impacto real en sus comunidades.
+        <section
+          className="space-y-6 rounded-4xl border border-slate-800 bg-[#13161d] p-10 shadow-[0_20px_60px_-40px_rgba(0,0,0,0.8)] md:p-12"
+          id="contacto"
+        >
+          <div className="space-y-3">
+            <span className="inline-flex items-center rounded-full border border-[#c2a676]/40 px-4 py-1 text-xs font-semibold uppercase tracking-[0.3em] text-[#c2a676]">
+              Contacto
+            </span>
+            <h2 className="font-playfair text-3xl font-semibold text-slate-50">Conversemos</h2>
+            <p className="text-base leading-relaxed text-slate-300">
+              Objetivo: permitir que te contacten fácil y rápido.
             </p>
           </div>
-          <div className="grid gap-6 md:grid-cols-3">
-            <div className="rounded-3xl bg-white p-8 shadow-sm ring-1 ring-slate-100">
-              <h3 className="mb-3 text-xl font-semibold text-slate-900">Visión</h3>
-              <p className="text-slate-600">
-                Ser el aliado estrategico preferido por empresas que necesitan evolucionar sus modelos
-                de negocio desde la creatividad y la tecnologia.
-              </p>
+          <dl className="grid gap-8 sm:grid-cols-3">
+            <div>
+              <dt className="text-xs font-semibold uppercase tracking-[0.3em] text-slate-400">Correo</dt>
+              <dd className="mt-3 text-lg">
+                <a
+                  href="mailto:contacto@aahumada.com"
+                  className="text-[#c2a676] transition hover:text-[#b79960]"
+                >
+                  contacto@aahumada.com
+                </a>
+              </dd>
             </div>
-            <div className="rounded-3xl bg-white p-8 shadow-sm ring-1 ring-slate-100">
-              <h3 className="mb-3 text-xl font-semibold text-slate-900">Misión</h3>
-              <p className="text-slate-600">
-                Disenar soluciones integrales que conecten necesidades reales con propuestas de valor
-                viables, sostenibles y medibles.
-              </p>
+            <div>
+              <dt className="text-xs font-semibold uppercase tracking-[0.3em] text-slate-400">
+                WhatsApp / Teléfono
+              </dt>
+              <dd className="mt-3 text-lg">
+                <a
+                  href="https://wa.me/56949186386"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="text-[#c2a676] transition hover:text-[#b79960]"
+                >
+                  +56 9 4918 6386
+                </a>
+              </dd>
             </div>
-            <div className="rounded-3xl bg-white p-8 shadow-sm ring-1 ring-slate-100">
-              <h3 className="mb-3 text-xl font-semibold text-slate-900">Valores</h3>
-              <p className="text-slate-600">
-                Transparencia, colaboracion y aprendizaje continuo. Cada proyecto es una oportunidad
-                para crecer junto a nuestros clientes.
-              </p>
+            <div>
+              <dt className="text-xs font-semibold uppercase tracking-[0.3em] text-slate-400">
+                Redes sociales
+              </dt>
+              <dd className="mt-3 text-lg">
+                <a
+                  href="https://www.instagram.com/grupo_aahumada"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="text-[#c2a676] transition hover:text-[#b79960]"
+                >
+                  Instagram · @grupo_aahumada
+                </a>
+              </dd>
             </div>
-          </div>
-        </section>
-
-        <section className="space-y-12" id="empresas">
-          <div className="space-y-4">
-            <h2 className="text-3xl font-semibold text-slate-900">Empresas del grupo</h2>
-            <p className="max-w-3xl text-lg leading-relaxed text-slate-600">
-              Diversificamos nuestras capacidades en unidades de negocio que se complementan entre si,
-              manteniendo un mismo estandar de excelencia y servicio.
-            </p>
-          </div>
-
-          <div className="grid gap-6 md:grid-cols-3">
-            <article className="flex h-full flex-col rounded-3xl bg-white p-8 shadow-sm ring-1 ring-slate-100">
-              <div className="mb-4 text-sm font-semibold uppercase tracking-[0.2em] text-sky-600">
-                Estrategia
-              </div>
-              <h3 className="text-xl font-semibold text-slate-900">Ahumada Consulting</h3>
-              <p className="mt-3 flex-1 text-slate-600">
-                Consultoria integral para redefinir modelos de negocios, optimizar procesos y
-                acompanar la transformacion digital de organizaciones.
-              </p>
-              <a
-                href="#contacto"
-                className="mt-6 inline-flex items-center text-sm font-semibold text-sky-600 hover:text-sky-700"
-              >
-                Coordinar una reunion &gt;
-              </a>
-            </article>
-
-            <article className="flex h-full flex-col rounded-3xl bg-white p-8 shadow-sm ring-1 ring-slate-100">
-              <div className="mb-4 text-sm font-semibold uppercase tracking-[0.2em] text-sky-600">
-                Marketing
-              </div>
-              <h3 className="text-xl font-semibold text-slate-900">Ahumada Creative Lab</h3>
-              <p className="mt-3 flex-1 text-slate-600">
-                Estrategias de marca, contenido y experiencias digitales memorables, orientadas a
-                conectar con audiencias especificas y medir resultados.
-              </p>
-              <a
-                href="#contacto"
-                className="mt-6 inline-flex items-center text-sm font-semibold text-sky-600 hover:text-sky-700"
-              >
-                Solicitar portafolio &gt;
-              </a>
-            </article>
-
-            <article className="flex h-full flex-col rounded-3xl bg-white p-8 shadow-sm ring-1 ring-slate-100">
-              <div className="mb-4 text-sm font-semibold uppercase tracking-[0.2em] text-sky-600">
-                Tecnologia
-              </div>
-              <h3 className="text-xl font-semibold text-slate-900">Ahumada Tech Solutions</h3>
-              <p className="mt-3 flex-1 text-slate-600">
-                Desarrollo de plataformas, automatizaciones y data analytics para acelerar la
-                innovacion en ecosistemas corporativos y startups.
-              </p>
-              <a
-                href="#contacto"
-                className="mt-6 inline-flex items-center text-sm font-semibold text-sky-600 hover:text-sky-700"
-              >
-                Conocer casos de uso &gt;
-              </a>
-            </article>
-          </div>
-        </section>
-
-        <section className="space-y-10" id="contacto">
-          <div className="space-y-4">
-            <h2 className="text-3xl font-semibold text-slate-900">Contacto</h2>
-            <p className="max-w-3xl text-lg leading-relaxed text-slate-600">
-              Cuentanos sobre tu proximo desafio y encontremos juntos el camino para llevarlo al
-              siguiente nivel.
-            </p>
-          </div>
-
-          <div className="grid gap-8 md:grid-cols-[2fr_1.2fr]">
-            <form className="space-y-6 rounded-3xl bg-white p-8 shadow-sm ring-1 ring-slate-100">
-              <div>
-                <label className="block text-sm font-semibold text-slate-700" htmlFor="name">
-                  Nombre y apellido
-                </label>
-                <input
-                  id="name"
-                  type="text"
-                  placeholder="Tu nombre completo"
-                  className="mt-2 w-full rounded-2xl border border-slate-200 px-4 py-3 text-sm text-slate-900 placeholder:text-slate-400 focus:border-sky-500 focus:outline-none focus:ring-2 focus:ring-sky-100"
-                />
-              </div>
-              <div>
-                <label className="block text-sm font-semibold text-slate-700" htmlFor="email">
-                  Correo electronico
-                </label>
-                <input
-                  id="email"
-                  type="email"
-                  placeholder="nombre@empresa.com"
-                  className="mt-2 w-full rounded-2xl border border-slate-200 px-4 py-3 text-sm text-slate-900 placeholder:text-slate-400 focus:border-sky-500 focus:outline-none focus:ring-2 focus:ring-sky-100"
-                />
-              </div>
-              <div>
-                <label className="block text-sm font-semibold text-slate-700" htmlFor="company">
-                  Empresa
-                </label>
-                <input
-                  id="company"
-                  type="text"
-                  placeholder="Nombre de tu organizacion"
-                  className="mt-2 w-full rounded-2xl border border-slate-200 px-4 py-3 text-sm text-slate-900 placeholder:text-slate-400 focus:border-sky-500 focus:outline-none focus:ring-2 focus:ring-sky-100"
-                />
-              </div>
-              <div>
-                <label className="block text-sm font-semibold text-slate-700" htmlFor="message">
-                  En que podemos ayudarte?
-                </label>
-                <textarea
-                  id="message"
-                  rows={4}
-                  placeholder="Cuentanos brevemente el alcance del proyecto"
-                  className="mt-2 w-full rounded-2xl border border-slate-200 px-4 py-3 text-sm text-slate-900 placeholder:text-slate-400 focus:border-sky-500 focus:outline-none focus:ring-2 focus:ring-sky-100"
-                />
-              </div>
-              <button
-                type="submit"
-                className="inline-flex w-full items-center justify-center rounded-full bg-sky-600 px-6 py-3 text-sm font-semibold text-white transition hover:bg-sky-500"
-              >
-                Enviar mensaje
-              </button>
-            </form>
-
-            <aside className="space-y-8 rounded-3xl bg-slate-900 p-10 text-white shadow-lg">
-              <div>
-                <h3 className="text-lg font-semibold">Visitanos</h3>
-                <p className="mt-2 text-sm text-slate-200">
-                  Av. Innovación 1234, Piso 7<br />
-                  Santiago de Chile
-                </p>
-              </div>
-              <div>
-                <h3 className="text-lg font-semibold">Escribenos</h3>
-                <p className="mt-2 text-sm text-slate-200">
-                  contacto@grupoahumada.com<br />
-                  +56 9 1234 5678
-                </p>
-              </div>
-              <div>
-                <h3 className="text-lg font-semibold">Síguenos</h3>
-                <p className="mt-2 text-sm text-slate-200">
-                  LinkedIn - Instagram - YouTube
-                </p>
-              </div>
-            </aside>
-          </div>
+          </dl>
         </section>
       </main>
 
-      <footer className="border-t border-slate-200 bg-white py-8">
-        <div className="mx-auto flex max-w-6xl flex-col gap-2 px-6 text-sm text-slate-500 sm:flex-row sm:items-center sm:justify-between">
-          <p>© {new Date().getFullYear()} Grupo AAhumada. Todos los derechos reservados.</p>
-          <p className="text-slate-400">Construyendo alianzas que generan valor.</p>
+      <footer className="border-t border-slate-800 bg-[#0f1115] py-10">
+        <div className="mx-auto flex max-w-6xl flex-col gap-8 px-6 text-sm text-slate-400 md:flex-row md:items-center md:justify-between">
+          <div className="space-y-2">
+            <p className="font-playfair text-lg font-semibold text-slate-100">Grupo AAhumada</p>
+            <p>© 2025 Grupo AAhumada SpA</p>
+          </div>
+          <div className="flex flex-wrap gap-6 text-sm">
+            <a href="#politicas" className="text-slate-400 transition hover:text-[#c2a676]">
+              Políticas
+            </a>
+            <a
+              href="https://www.instagram.com/grupo_aahumada"
+              target="_blank"
+              rel="noreferrer"
+              className="text-slate-400 transition hover:text-[#c2a676]"
+            >
+              Instagram
+            </a>
+            <a href="mailto:contacto@aahumada.com" className="text-slate-400 transition hover:text-[#c2a676]">
+              contacto@aahumada.com
+            </a>
+          </div>
         </div>
       </footer>
     </div>
