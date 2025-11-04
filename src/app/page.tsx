@@ -278,7 +278,7 @@ export default function Home() {
                   <dt className="font-semibold text-slate-200">Redes:</dt>
                   <dd>
                     <a
-                      href="https://www.instagram.com/ahumada.gorumet"
+                      href="https://www.instagram.com/ahumada.gourmet"
                       target="_blank"
                       rel="noreferrer"
                       className="text-[#c2a676] transition hover:text-[#b79960]"
