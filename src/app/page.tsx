@@ -293,6 +293,49 @@ export default function Home() {
             <article className="flex h-full flex-col gap-6 rounded-3xl border border-slate-700 bg-[#191d27] p-8">
               <div className="space-y-2">
                 <p className="text-xs font-semibold uppercase tracking-[0.3em] text-[#c2a676]">
+                  Ahumada Detailing · En operación
+                </p>
+                <h3 className="font-playfair text-xl font-semibold text-slate-100">
+                  Lavado automotriz premium
+                </h3>
+              </div>
+              <p className="text-sm leading-relaxed text-slate-300">
+                Ahumada Detailing ofrece servicios integrales de detailing interior y exterior, con
+                foco en protección, brillo y cuidado de materiales nobles. Tratamientos de lavado
+                premium, encerado y restauración ligera para conservar la estética del vehículo.
+              </p>
+              <p className="text-sm leading-relaxed text-slate-300">
+                Atendemos a domicilio y en taller, con procesos estandarizados y productos de alto
+                desempeño para resultados consistentes y seguros.
+              </p>
+              <dl className="mt-auto space-y-2 text-xs text-slate-400">
+                <div className="flex gap-2">
+                  <dt className="font-semibold text-slate-200">Estado:</dt>
+                  <dd>Activa</dd>
+                </div>
+                <div className="flex gap-2">
+                  <dt className="font-semibold text-slate-200">Sector:</dt>
+                  <dd>Automotriz · Detailing</dd>
+                </div>
+                <div className="flex gap-2">
+                  <dt className="font-semibold text-slate-200">Redes:</dt>
+                  <dd>
+                    <a
+                      href="https://www.instagram.com/ahumada.detailing"
+                      target="_blank"
+                      rel="noreferrer"
+                      className="text-[#c2a676] transition hover:text-[#b79960]"
+                    >
+                      Instagram · @ahumada.detailing
+                    </a>
+                  </dd>
+                </div>
+              </dl>
+            </article>
+
+            <article className="flex h-full flex-col gap-6 rounded-3xl border border-slate-700 bg-[#191d27] p-8">
+              <div className="space-y-2">
+                <p className="text-xs font-semibold uppercase tracking-[0.3em] text-[#c2a676]">
                   Ahumada Labs · Incubadora interna
                 </p>
                 <h3 className="font-playfair text-xl font-semibold text-slate-100">
